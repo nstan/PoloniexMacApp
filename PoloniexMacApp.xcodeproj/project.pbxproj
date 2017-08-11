@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3A017C21F3D995C001D2B5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A017C11F3D995C001D2B5D /* AppDelegate.swift */; };
+		D3A017C41F3D995C001D2B5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A017C31F3D995C001D2B5D /* ViewController.swift */; };
+		D3A017C71F3D995C001D2B5D /* PoloniexMacApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3A017C51F3D995C001D2B5D /* PoloniexMacApp.xcdatamodeld */; };
+		D3A017C91F3D995C001D2B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A017C81F3D995C001D2B5D /* Assets.xcassets */; };
+		D3A017CC1F3D995C001D2B5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A017CA1F3D995C001D2B5D /* Main.storyboard */; };
+		D3A017D71F3D995C001D2B5D /* PoloniexMacAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A017D61F3D995C001D2B5D /* PoloniexMacAppTests.swift */; };
+		D3A017E21F3D995C001D2B5D /* PoloniexMacAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A017E11F3D995C001D2B5D /* PoloniexMacAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3A017D31F3D995C001D2B5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A017B61F3D995C001D2B5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3A017BD1F3D995C001D2B5D;
+			remoteInfo = PoloniexMacApp;
+		};
+		D3A017DE1F3D995C001D2B5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A017B61F3D995C001D2B5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3A017BD1F3D995C001D2B5D;
+			remoteInfo = PoloniexMacApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3A017BE1F3D995C001D2B5D /* PoloniexMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoloniexMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A017C11F3D995C001D2B5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3A017C31F3D995C001D2B5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3A017C61F3D995C001D2B5D /* PoloniexMacApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PoloniexMacApp.xcdatamodel; sourceTree = "<group>"; };
+		D3A017C81F3D995C001D2B5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3A017CB1F3D995C001D2B5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3A017CD1F3D995C001D2B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A017D21F3D995C001D2B5D /* PoloniexMacAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoloniexMacAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A017D61F3D995C001D2B5D /* PoloniexMacAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoloniexMacAppTests.swift; sourceTree = "<group>"; };
+		D3A017D81F3D995C001D2B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A017DD1F3D995C001D2B5D /* PoloniexMacAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoloniexMacAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A017E11F3D995C001D2B5D /* PoloniexMacAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoloniexMacAppUITests.swift; sourceTree = "<group>"; };
+		D3A017E31F3D995D001D2B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3A017BB1F3D995C001D2B5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A017CF1F3D995C001D2B5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A017DA1F3D995C001D2B5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3A017B51F3D995C001D2B5D = {
+			isa = PBXGroup;
+			children = (
+				D3A017C01F3D995C001D2B5D /* PoloniexMacApp */,
+				D3A017D51F3D995C001D2B5D /* PoloniexMacAppTests */,
+				D3A017E01F3D995C001D2B5D /* PoloniexMacAppUITests */,
+				D3A017BF1F3D995C001D2B5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3A017BF1F3D995C001D2B5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3A017BE1F3D995C001D2B5D /* PoloniexMacApp.app */,
+				D3A017D21F3D995C001D2B5D /* PoloniexMacAppTests.xctest */,
+				D3A017DD1F3D995C001D2B5D /* PoloniexMacAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3A017C01F3D995C001D2B5D /* PoloniexMacApp */ = {
+			isa = PBXGroup;
+			children = (
+				D3A017C11F3D995C001D2B5D /* AppDelegate.swift */,
+				D3A017C31F3D995C001D2B5D /* ViewController.swift */,
+				D3A017C81F3D995C001D2B5D /* Assets.xcassets */,
+				D3A017CA1F3D995C001D2B5D /* Main.storyboard */,
+				D3A017CD1F3D995C001D2B5D /* Info.plist */,
+				D3A017C51F3D995C001D2B5D /* PoloniexMacApp.xcdatamodeld */,
+			);
+			path = PoloniexMacApp;
+			sourceTree = "<group>";
+		};
+		D3A017D51F3D995C001D2B5D /* PoloniexMacAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3A017D61F3D995C001D2B5D /* PoloniexMacAppTests.swift */,
+				D3A017D81F3D995C001D2B5D /* Info.plist */,
+			);
+			path = PoloniexMacAppTests;
+			sourceTree = "<group>";
+		};
+		D3A017E01F3D995C001D2B5D /* PoloniexMacAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3A017E11F3D995C001D2B5D /* PoloniexMacAppUITests.swift */,
+				D3A017E31F3D995D001D2B5D /* Info.plist */,
+			);
+			path = PoloniexMacAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3A017BD1F3D995C001D2B5D /* PoloniexMacApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3A017E61F3D995D001D2B5D /* Build configuration list for PBXNativeTarget "PoloniexMacApp" */;
+			buildPhases = (
+				D3A017BA1F3D995C001D2B5D /* Sources */,
+				D3A017BB1F3D995C001D2B5D /* Frameworks */,
+				D3A017BC1F3D995C001D2B5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PoloniexMacApp;
+			productName = PoloniexMacApp;
+			productReference = D3A017BE1F3D995C001D2B5D /* PoloniexMacApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3A017D11F3D995C001D2B5D /* PoloniexMacAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3A017E91F3D995D001D2B5D /* Build configuration list for PBXNativeTarget "PoloniexMacAppTests" */;
+			buildPhases = (
+				D3A017CE1F3D995C001D2B5D /* Sources */,
+				D3A017CF1F3D995C001D2B5D /* Frameworks */,
+				D3A017D01F3D995C001D2B5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3A017D41F3D995C001D2B5D /* PBXTargetDependency */,
+			);
+			name = PoloniexMacAppTests;
+			productName = PoloniexMacAppTests;
+			productReference = D3A017D21F3D995C001D2B5D /* PoloniexMacAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3A017DC1F3D995C001D2B5D /* PoloniexMacAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3A017EC1F3D995D001D2B5D /* Build configuration list for PBXNativeTarget "PoloniexMacAppUITests" */;
+			buildPhases = (
+				D3A017D91F3D995C001D2B5D /* Sources */,
+				D3A017DA1F3D995C001D2B5D /* Frameworks */,
+				D3A017DB1F3D995C001D2B5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3A017DF1F3D995C001D2B5D /* PBXTargetDependency */,
+			);
+			name = PoloniexMacAppUITests;
+			productName = PoloniexMacAppUITests;
+			productReference = D3A017DD1F3D995C001D2B5D /* PoloniexMacAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3A017B61F3D995C001D2B5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Nikola Stan";
+				TargetAttributes = {
+					D3A017BD1F3D995C001D2B5D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6J9735Q573;
+						ProvisioningStyle = Automatic;
+					};
+					D3A017D11F3D995C001D2B5D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6J9735Q573;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D3A017BD1F3D995C001D2B5D;
+					};
+					D3A017DC1F3D995C001D2B5D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6J9735Q573;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D3A017BD1F3D995C001D2B5D;
+					};
+				};
+			};
+			buildConfigurationList = D3A017B91F3D995C001D2B5D /* Build configuration list for PBXProject "PoloniexMacApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3A017B51F3D995C001D2B5D;
+			productRefGroup = D3A017BF1F3D995C001D2B5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3A017BD1F3D995C001D2B5D /* PoloniexMacApp */,
+				D3A017D11F3D995C001D2B5D /* PoloniexMacAppTests */,
+				D3A017DC1F3D995C001D2B5D /* PoloniexMacAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3A017BC1F3D995C001D2B5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A017C91F3D995C001D2B5D /* Assets.xcassets in Resources */,
+				D3A017CC1F3D995C001D2B5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A017D01F3D995C001D2B5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A017DB1F3D995C001D2B5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3A017BA1F3D995C001D2B5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A017C41F3D995C001D2B5D /* ViewController.swift in Sources */,
+				D3A017C71F3D995C001D2B5D /* PoloniexMacApp.xcdatamodeld in Sources */,
+				D3A017C21F3D995C001D2B5D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A017CE1F3D995C001D2B5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A017D71F3D995C001D2B5D /* PoloniexMacAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A017D91F3D995C001D2B5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A017E21F3D995C001D2B5D /* PoloniexMacAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3A017D41F3D995C001D2B5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3A017BD1F3D995C001D2B5D /* PoloniexMacApp */;
+			targetProxy = D3A017D31F3D995C001D2B5D /* PBXContainerItemProxy */;
+		};
+		D3A017DF1F3D995C001D2B5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3A017BD1F3D995C001D2B5D /* PoloniexMacApp */;
+			targetProxy = D3A017DE1F3D995C001D2B5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3A017CA1F3D995C001D2B5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3A017CB1F3D995C001D2B5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3A017E41F3D995D001D2B5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3A017E51F3D995D001D2B5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		D3A017E71F3D995D001D2B5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6J9735Q573;
+				INFOPLIST_FILE = PoloniexMacApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolastan.PoloniexMacApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D3A017E81F3D995D001D2B5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6J9735Q573;
+				INFOPLIST_FILE = PoloniexMacApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolastan.PoloniexMacApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D3A017EA1F3D995D001D2B5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6J9735Q573;
+				INFOPLIST_FILE = PoloniexMacAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolastan.PoloniexMacAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoloniexMacApp.app/Contents/MacOS/PoloniexMacApp";
+			};
+			name = Debug;
+		};
+		D3A017EB1F3D995D001D2B5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6J9735Q573;
+				INFOPLIST_FILE = PoloniexMacAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolastan.PoloniexMacAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoloniexMacApp.app/Contents/MacOS/PoloniexMacApp";
+			};
+			name = Release;
+		};
+		D3A017ED1F3D995D001D2B5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6J9735Q573;
+				INFOPLIST_FILE = PoloniexMacAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolastan.PoloniexMacAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PoloniexMacApp;
+			};
+			name = Debug;
+		};
+		D3A017EE1F3D995D001D2B5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6J9735Q573;
+				INFOPLIST_FILE = PoloniexMacAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikolastan.PoloniexMacAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PoloniexMacApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3A017B91F3D995C001D2B5D /* Build configuration list for PBXProject "PoloniexMacApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A017E41F3D995D001D2B5D /* Debug */,
+				D3A017E51F3D995D001D2B5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3A017E61F3D995D001D2B5D /* Build configuration list for PBXNativeTarget "PoloniexMacApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A017E71F3D995D001D2B5D /* Debug */,
+				D3A017E81F3D995D001D2B5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D3A017E91F3D995D001D2B5D /* Build configuration list for PBXNativeTarget "PoloniexMacAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A017EA1F3D995D001D2B5D /* Debug */,
+				D3A017EB1F3D995D001D2B5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D3A017EC1F3D995D001D2B5D /* Build configuration list for PBXNativeTarget "PoloniexMacAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A017ED1F3D995D001D2B5D /* Debug */,
+				D3A017EE1F3D995D001D2B5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3A017C51F3D995C001D2B5D /* PoloniexMacApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3A017C61F3D995C001D2B5D /* PoloniexMacApp.xcdatamodel */,
+			);
+			currentVersion = D3A017C61F3D995C001D2B5D /* PoloniexMacApp.xcdatamodel */;
+			path = PoloniexMacApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D3A017B61F3D995C001D2B5D /* Project object */;
+}
