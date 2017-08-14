@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D398E4C01F40F5C200EEF836 /* MyCustomSwiftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4BF1F40F5C200EEF836 /* MyCustomSwiftSegue.swift */; };
+		D398E4C21F40F75D00EEF836 /* MyCustomSwiftAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4C11F40F75D00EEF836 /* MyCustomSwiftAnimator.swift */; };
+		D398E4C41F413A7E00EEF836 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4C31F413A7E00EEF836 /* Constants.swift */; };
+		D398E4C61F41956200EEF836 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4C51F41956200EEF836 /* Extensions.swift */; };
 		D3A017C21F3D995C001D2B5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A017C11F3D995C001D2B5D /* AppDelegate.swift */; };
-		D3A017C41F3D995C001D2B5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A017C31F3D995C001D2B5D /* ViewController.swift */; };
 		D3A017C71F3D995C001D2B5D /* PoloniexMacApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3A017C51F3D995C001D2B5D /* PoloniexMacApp.xcdatamodeld */; };
 		D3A017C91F3D995C001D2B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A017C81F3D995C001D2B5D /* Assets.xcassets */; };
 		D3A017CC1F3D995C001D2B5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A017CA1F3D995C001D2B5D /* Main.storyboard */; };
 		D3A017D71F3D995C001D2B5D /* PoloniexMacAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A017D61F3D995C001D2B5D /* PoloniexMacAppTests.swift */; };
 		D3A017E21F3D995C001D2B5D /* PoloniexMacAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A017E11F3D995C001D2B5D /* PoloniexMacAppUITests.swift */; };
+		D3A017F11F3DA1D9001D2B5D /* KeyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A017F01F3DA1D9001D2B5D /* KeyLoader.swift */; };
+		D3A017F31F3DA228001D2B5D /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A017F21F3DA228001D2B5D /* KeychainSwiftDistrib.swift */; };
+		D3A017F51F3DA89A001D2B5D /* AuthenticationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A017F41F3DA89A001D2B5D /* AuthenticationVC.swift */; };
+		D3A017F71F3DC43E001D2B5D /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A017F61F3DC43E001D2B5D /* HomeScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D398E4BF1F40F5C200EEF836 /* MyCustomSwiftSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomSwiftSegue.swift; sourceTree = "<group>"; };
+		D398E4C11F40F75D00EEF836 /* MyCustomSwiftAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomSwiftAnimator.swift; sourceTree = "<group>"; };
+		D398E4C31F413A7E00EEF836 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D398E4C51F41956200EEF836 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D3A017BE1F3D995C001D2B5D /* PoloniexMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoloniexMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A017C11F3D995C001D2B5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3A017C31F3D995C001D2B5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3A017C61F3D995C001D2B5D /* PoloniexMacApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PoloniexMacApp.xcdatamodel; sourceTree = "<group>"; };
 		D3A017C81F3D995C001D2B5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3A017CB1F3D995C001D2B5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,10 @@
 		D3A017DD1F3D995C001D2B5D /* PoloniexMacAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoloniexMacAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A017E11F3D995C001D2B5D /* PoloniexMacAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoloniexMacAppUITests.swift; sourceTree = "<group>"; };
 		D3A017E31F3D995D001D2B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A017F01F3DA1D9001D2B5D /* KeyLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyLoader.swift; sourceTree = "<group>"; };
+		D3A017F21F3DA228001D2B5D /* KeychainSwiftDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftDistrib.swift; sourceTree = "<group>"; };
+		D3A017F41F3DA89A001D2B5D /* AuthenticationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationVC.swift; sourceTree = "<group>"; };
+		D3A017F61F3DC43E001D2B5D /* HomeScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +88,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D398E4BE1F40F5A900EEF836 /* Custom Segue */ = {
+			isa = PBXGroup;
+			children = (
+				D398E4BF1F40F5C200EEF836 /* MyCustomSwiftSegue.swift */,
+				D398E4C11F40F75D00EEF836 /* MyCustomSwiftAnimator.swift */,
+			);
+			name = "Custom Segue";
+			sourceTree = "<group>";
+		};
 		D3A017B51F3D995C001D2B5D = {
 			isa = PBXGroup;
 			children = (
 				D3A017C01F3D995C001D2B5D /* PoloniexMacApp */,
+				D3A017EF1F3D9AC5001D2B5D /* lib */,
 				D3A017D51F3D995C001D2B5D /* PoloniexMacAppTests */,
 				D3A017E01F3D995C001D2B5D /* PoloniexMacAppUITests */,
 				D3A017BF1F3D995C001D2B5D /* Products */,
@@ -98,7 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				D3A017C11F3D995C001D2B5D /* AppDelegate.swift */,
-				D3A017C31F3D995C001D2B5D /* ViewController.swift */,
+				D3A017F41F3DA89A001D2B5D /* AuthenticationVC.swift */,
+				D3A017F61F3DC43E001D2B5D /* HomeScreenVC.swift */,
 				D3A017C81F3D995C001D2B5D /* Assets.xcassets */,
 				D3A017CA1F3D995C001D2B5D /* Main.storyboard */,
 				D3A017CD1F3D995C001D2B5D /* Info.plist */,
@@ -123,6 +148,19 @@
 				D3A017E31F3D995D001D2B5D /* Info.plist */,
 			);
 			path = PoloniexMacAppUITests;
+			sourceTree = "<group>";
+		};
+		D3A017EF1F3D9AC5001D2B5D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D398E4C51F41956200EEF836 /* Extensions.swift */,
+				D398E4C31F413A7E00EEF836 /* Constants.swift */,
+				D398E4BE1F40F5A900EEF836 /* Custom Segue */,
+				D3A017F21F3DA228001D2B5D /* KeychainSwiftDistrib.swift */,
+				D3A017F01F3DA1D9001D2B5D /* KeyLoader.swift */,
+			);
+			name = lib;
+			path = PoloniexMacApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +299,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A017C41F3D995C001D2B5D /* ViewController.swift in Sources */,
+				D3A017F31F3DA228001D2B5D /* KeychainSwiftDistrib.swift in Sources */,
+				D3A017F51F3DA89A001D2B5D /* AuthenticationVC.swift in Sources */,
 				D3A017C71F3D995C001D2B5D /* PoloniexMacApp.xcdatamodeld in Sources */,
+				D3A017F71F3DC43E001D2B5D /* HomeScreenVC.swift in Sources */,
+				D3A017F11F3DA1D9001D2B5D /* KeyLoader.swift in Sources */,
+				D398E4C61F41956200EEF836 /* Extensions.swift in Sources */,
+				D398E4C01F40F5C200EEF836 /* MyCustomSwiftSegue.swift in Sources */,
 				D3A017C21F3D995C001D2B5D /* AppDelegate.swift in Sources */,
+				D398E4C21F40F75D00EEF836 /* MyCustomSwiftAnimator.swift in Sources */,
+				D398E4C41F413A7E00EEF836 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +556,7 @@
 				D3A017E81F3D995D001D2B5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3A017E91F3D995D001D2B5D /* Build configuration list for PBXNativeTarget "PoloniexMacAppTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +565,7 @@
 				D3A017EB1F3D995D001D2B5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3A017EC1F3D995D001D2B5D /* Build configuration list for PBXNativeTarget "PoloniexMacAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +574,7 @@
 				D3A017EE1F3D995D001D2B5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

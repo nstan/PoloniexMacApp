@@ -8,13 +8,22 @@
 
 import Cocoa
 
+// global instances used anywhere in the App
+let keychain = KeychainSwift()
+let defaults = UserDefaults.standard
+var lastRequestTime : DispatchTime = DispatchTime.now()
+let storyBoard = NSStoryboard(name: "Main", bundle: nil) as NSStoryboard
+
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        
+        // Override point for customization after application launch.
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
