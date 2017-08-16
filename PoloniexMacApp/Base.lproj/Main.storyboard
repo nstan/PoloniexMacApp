@@ -773,43 +773,51 @@
         <scene sceneID="Y8Y-8N-DQu">
             <objects>
                 <viewController storyboardIdentifier="homeScreenController" id="Yrh-UM-kgg" customClass="HomeScreenVC" customModule="PoloniexMacApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="zVd-qu-xZJ">
-                        <rect key="frame" x="0.0" y="0.0" width="858" height="525"/>
+                    <view key="view" wantsLayer="YES" id="zVd-qu-xZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="945" height="359"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWv-TZ-MPC">
-                                <rect key="frame" x="84" y="440" width="37" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="cjT-2c-7Ub">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button identifier="settingsButtonID" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mhf-KZ-1gv">
-                                <rect key="frame" x="755" y="477" width="89" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="settings" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rt2-5T-Wb5">
+                            <button identifier="settingsButtonID" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mhf-KZ-1gv">
+                                <rect key="frame" x="840" y="313" width="93" height="32"/>
+                                <buttonCell key="cell" type="push" title="API Keys" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rt2-5T-Wb5">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="settingsButtonPressed:" target="Yrh-UM-kgg" id="TSd-Fs-lsN"/>
+                                    <action selector="APIKeysButtonPressed:" target="Yrh-UM-kgg" id="EsL-T6-yyp"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsExpansionToolTips="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpM-SG-cEK">
+                                <rect key="frame" x="868" y="8" width="59" height="11"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" title="[open orders:]" drawsBackground="YES" id="yHT-MM-0U2">
+                                    <font key="font" size="8" name="AmericanTypewriter"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="IpM-SG-cEK" secondAttribute="bottom" constant="8" id="VG0-wW-QYu"/>
+                            <constraint firstAttribute="trailing" secondItem="IpM-SG-cEK" secondAttribute="trailing" constant="18" id="pWX-CR-1hD"/>
+                            <constraint firstAttribute="trailing" secondItem="Mhf-KZ-1gv" secondAttribute="trailing" constant="18" id="tWQ-Ex-nx3"/>
+                            <constraint firstItem="Mhf-KZ-1gv" firstAttribute="top" secondItem="zVd-qu-xZJ" secondAttribute="top" constant="18" id="zLu-al-Sd1"/>
+                        </constraints>
+                        <shadow key="shadow">
+                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </shadow>
                     </view>
                     <connections>
-                        <outlet property="settingsButton" destination="Mhf-KZ-1gv" id="plQ-sV-BVb"/>
+                        <outlet property="APIKeysButton" destination="Mhf-KZ-1gv" id="wXg-wG-Ft3"/>
+                        <outlet property="openOrdersLabel" destination="IpM-SG-cEK" id="8ni-Q6-E1X"/>
                         <segue destination="XfG-lQ-9wD" kind="custom" identifier="toSettings" customClass="MyCustomSwiftSegue" customModule="PoloniexMacApp" customModuleProvider="target" id="mes-cC-UE6"/>
                     </connections>
                 </viewController>
                 <customObject id="sAd-1E-Tln" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231" y="729"/>
+            <point key="canvasLocation" x="406.5" y="1162.5"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qbq-Tx-aTm"/>
+        <segue reference="paK-Cj-jV2"/>
     </inferredMetricsTieBreakers>
 </document>

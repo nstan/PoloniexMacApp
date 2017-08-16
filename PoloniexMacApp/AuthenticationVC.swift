@@ -44,10 +44,10 @@ class AuthenticationVC: NSViewController {
         print ("Entered Key: Public ( \(keys.key) and Secret (\(keys.secret))")
         
         let originalVC = self.presenting as! HomeScreenVC
-        originalVC.settingsButton.isEnabled = true
+        originalVC.APIKeysButton.isEnabled = true
         originalVC.keys = keys
         dismissViewController(self)
-        
+        originalVC.updateView ()
     }
     
     override func viewDidLoad() {

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D321AA321F43E18D005C5E88 /* PoloniexPrivateAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA2E1F43E18D005C5E88 /* PoloniexPrivateAPIs.swift */; };
+		D321AA331F43E18D005C5E88 /* PoloniexPublicAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA2F1F43E18D005C5E88 /* PoloniexPublicAPIs.swift */; };
+		D321AA341F43E18D005C5E88 /* PoloniexRequestPrivate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA301F43E18D005C5E88 /* PoloniexRequestPrivate.swift */; };
+		D321AA351F43E18D005C5E88 /* PoloniexRequestPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA311F43E18D005C5E88 /* PoloniexRequestPublic.swift */; };
+		D321AA371F43E1B5005C5E88 /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA361F43E1B5005C5E88 /* DataStructures.swift */; };
+		D321AA3D1F43E34F005C5E88 /* RNCryptor.c in Sources */ = {isa = PBXBuildFile; fileRef = D321AA3B1F43E34F005C5E88 /* RNCryptor.c */; };
+		D321AA3F1F43ECD8005C5E88 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA3E1F43ECD8005C5E88 /* Crypto.swift */; };
 		D398E4C01F40F5C200EEF836 /* MyCustomSwiftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4BF1F40F5C200EEF836 /* MyCustomSwiftSegue.swift */; };
 		D398E4C21F40F75D00EEF836 /* MyCustomSwiftAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4C11F40F75D00EEF836 /* MyCustomSwiftAnimator.swift */; };
 		D398E4C41F413A7E00EEF836 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4C31F413A7E00EEF836 /* Constants.swift */; };
@@ -41,6 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D321AA2E1F43E18D005C5E88 /* PoloniexPrivateAPIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoloniexPrivateAPIs.swift; sourceTree = "<group>"; };
+		D321AA2F1F43E18D005C5E88 /* PoloniexPublicAPIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoloniexPublicAPIs.swift; sourceTree = "<group>"; };
+		D321AA301F43E18D005C5E88 /* PoloniexRequestPrivate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoloniexRequestPrivate.swift; sourceTree = "<group>"; };
+		D321AA311F43E18D005C5E88 /* PoloniexRequestPublic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoloniexRequestPublic.swift; sourceTree = "<group>"; };
+		D321AA361F43E1B5005C5E88 /* DataStructures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
+		D321AA3A1F43E34F005C5E88 /* PoloniexMacApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoloniexMacApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		D321AA3B1F43E34F005C5E88 /* RNCryptor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RNCryptor.c; sourceTree = "<group>"; };
+		D321AA3C1F43E34F005C5E88 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		D321AA3E1F43ECD8005C5E88 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		D398E4BF1F40F5C200EEF836 /* MyCustomSwiftSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomSwiftSegue.swift; sourceTree = "<group>"; };
 		D398E4C11F40F75D00EEF836 /* MyCustomSwiftAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomSwiftAnimator.swift; sourceTree = "<group>"; };
 		D398E4C31F413A7E00EEF836 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -88,6 +104,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D321AA381F43E245005C5E88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		D398E4BE1F40F5A900EEF836 /* Custom Segue */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,11 +123,15 @@
 		D3A017B51F3D995C001D2B5D = {
 			isa = PBXGroup;
 			children = (
+				D321AA3B1F43E34F005C5E88 /* RNCryptor.c */,
+				D321AA3C1F43E34F005C5E88 /* RNCryptor.h */,
+				D321AA381F43E245005C5E88 /* Model */,
 				D3A017C01F3D995C001D2B5D /* PoloniexMacApp */,
 				D3A017EF1F3D9AC5001D2B5D /* lib */,
 				D3A017D51F3D995C001D2B5D /* PoloniexMacAppTests */,
 				D3A017E01F3D995C001D2B5D /* PoloniexMacAppUITests */,
 				D3A017BF1F3D995C001D2B5D /* Products */,
+				D321AA3A1F43E34F005C5E88 /* PoloniexMacApp-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,9 +182,15 @@
 			children = (
 				D398E4C51F41956200EEF836 /* Extensions.swift */,
 				D398E4C31F413A7E00EEF836 /* Constants.swift */,
+				D321AA2E1F43E18D005C5E88 /* PoloniexPrivateAPIs.swift */,
+				D321AA3E1F43ECD8005C5E88 /* Crypto.swift */,
+				D321AA2F1F43E18D005C5E88 /* PoloniexPublicAPIs.swift */,
+				D321AA301F43E18D005C5E88 /* PoloniexRequestPrivate.swift */,
+				D321AA311F43E18D005C5E88 /* PoloniexRequestPublic.swift */,
 				D398E4BE1F40F5A900EEF836 /* Custom Segue */,
 				D3A017F21F3DA228001D2B5D /* KeychainSwiftDistrib.swift */,
 				D3A017F01F3DA1D9001D2B5D /* KeyLoader.swift */,
+				D321AA361F43E1B5005C5E88 /* DataStructures.swift */,
 			);
 			name = lib;
 			path = PoloniexMacApp;
@@ -232,6 +265,7 @@
 					D3A017BD1F3D995C001D2B5D = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6J9735Q573;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					D3A017D11F3D995C001D2B5D = {
@@ -303,12 +337,19 @@
 				D3A017F51F3DA89A001D2B5D /* AuthenticationVC.swift in Sources */,
 				D3A017C71F3D995C001D2B5D /* PoloniexMacApp.xcdatamodeld in Sources */,
 				D3A017F71F3DC43E001D2B5D /* HomeScreenVC.swift in Sources */,
+				D321AA3F1F43ECD8005C5E88 /* Crypto.swift in Sources */,
+				D321AA341F43E18D005C5E88 /* PoloniexRequestPrivate.swift in Sources */,
 				D3A017F11F3DA1D9001D2B5D /* KeyLoader.swift in Sources */,
+				D321AA371F43E1B5005C5E88 /* DataStructures.swift in Sources */,
+				D321AA331F43E18D005C5E88 /* PoloniexPublicAPIs.swift in Sources */,
 				D398E4C61F41956200EEF836 /* Extensions.swift in Sources */,
+				D321AA351F43E18D005C5E88 /* PoloniexRequestPublic.swift in Sources */,
 				D398E4C01F40F5C200EEF836 /* MyCustomSwiftSegue.swift in Sources */,
 				D3A017C21F3D995C001D2B5D /* AppDelegate.swift in Sources */,
+				D321AA321F43E18D005C5E88 /* PoloniexPrivateAPIs.swift in Sources */,
 				D398E4C21F40F75D00EEF836 /* MyCustomSwiftAnimator.swift in Sources */,
 				D398E4C41F413A7E00EEF836 /* Constants.swift in Sources */,
+				D321AA3D1F43E34F005C5E88 /* RNCryptor.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,12 +492,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6J9735Q573;
 				INFOPLIST_FILE = PoloniexMacApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolastan.PoloniexMacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PoloniexMacApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -465,12 +509,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6J9735Q573;
 				INFOPLIST_FILE = PoloniexMacApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolastan.PoloniexMacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PoloniexMacApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
