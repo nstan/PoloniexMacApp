@@ -16,8 +16,29 @@ class HomeScreenVC: NSViewController, NSTableViewDataSource {
     var openOrders: [OpenOrder] = []
         //[OpenOrder(currencyPair:"", orderNumber:0, type:"buy", rate:0, amount:0, total:0)]
     var openOrdersString : [String] = []
-    var cancelButtons : [String] = []
     
+    @IBAction func cancelButtonPressed(_ sender: NSButton) {
+        if openOrders.count != 0 {
+            let v = sender.superview as! NSView
+            let tV = sender.superview?.superview?.superview as! NSTableView
+            let row = tV.row(for: v)
+            let orderNumber = openOrders[row].orderNumber
+            var cancelled:Bool, message:String, amount:Double
+            (cancelled , message, amount) = MyOrderCancelLoader.cancelOrder(orderNumber: orderNumber!, keys!)
+            print ("message: %@", message)
+            let coin = openOrders[row].currencyPair?.components(separatedBy: "_")[1] as! String
+            if cancelled {
+                print ("order number \(orderNumber!) for \(amount) \(coin) successfuly cancelled")
+                openOrdersString.remove(at: row)
+                openOrdersTableView.reloadData()
+            } else {
+                print("there has been a mistake cancelling the order number \(orderNumber) for \(amount) \(coin)")
+            }
+        }
+        else {print ("no open orders to cancel")
+        }
+    }
+
     @IBOutlet weak var openOrdersTableView: NSTableView!
     
     var keys: APIKeys?
@@ -42,7 +63,6 @@ class HomeScreenVC: NSViewController, NSTableViewDataSource {
                 self.view.layer?.backgroundColor = NSColor.white.cgColor
         
         APIKeysButton.isEnabled = true
-        
 //        openOrdersTableView.delegate = self
 
         // timer that will refresh the window view
@@ -119,8 +139,12 @@ class HomeScreenVC: NSViewController, NSTableViewDataSource {
         (openOrders, e) = OpenOrdersLoader.returnOpenOrders(currencyPair:"all", keys!)
         var response : [String] = []
         var buttons : [String] = []
-        if openOrders.count==0 {response = ["No open orders."]}
+        if openOrders.count==0 {
+            response = ["No open orders."]
+            openOrdersTableView.tableColumns[0].isHidden = true
+        }
         else {
+            openOrdersTableView.tableColumns[0].isHidden = false
             for x in openOrders {
                 let c0 = x.currencyPair!.components(separatedBy: "_")[0]
                 let c1 = x.currencyPair!.components(separatedBy: "_")[1]
