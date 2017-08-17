@@ -11,7 +11,15 @@ import Cocoa
 import QuartzCore
 
 
-class HomeScreenVC: NSViewController {
+class HomeScreenVC: NSViewController, NSTableViewDataSource {
+    
+    var openOrders: [OpenOrder] = []
+        //[OpenOrder(currencyPair:"", orderNumber:0, type:"buy", rate:0, amount:0, total:0)]
+    var openOrdersString : [String] = []
+    var cancelButtons : [String] = []
+    
+    @IBOutlet weak var openOrdersTableView: NSTableView!
+    
     var keys: APIKeys?
     var timer = Timer()
     var vc: NSViewController = NSViewController()
@@ -34,11 +42,11 @@ class HomeScreenVC: NSViewController {
                 self.view.layer?.backgroundColor = NSColor.white.cgColor
         
         APIKeysButton.isEnabled = true
+        
+//        openOrdersTableView.delegate = self
 
         // timer that will refresh the window view
         scheduledTimerWithTimeInterval()
-
-        
     }
     
     override func viewDidAppear() {
@@ -61,6 +69,28 @@ class HomeScreenVC: NSViewController {
         }
     }
     
+    // MARK: DataSource
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return openOrdersString.count
+    }
+    
+    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+//        let c0 = NSTableColumn.init(identifier: "openOrdersDescriptionColumn")
+//        let c1 = NSTableColumn.init(identifier: "openOrdersButtonsColumn")
+//        guard let tc = tableColumn else {
+//            print ("error reading table column");
+//            return ""
+//        }
+//        switch tc {
+//        case c0:
+            return openOrdersString[row]
+//        case c1:
+//            return cancelButtons[row]
+//        default :
+//            return ""
+//        }
+    }
+    
     override func viewWillDisappear() {
         timer.invalidate()
     }
@@ -81,35 +111,43 @@ class HomeScreenVC: NSViewController {
     }
     
     func updateView () {
-        updateOpenOrdersLabel ()
-        
+        updateOpenOrdersTableView ()
     }
     
-    func updateOpenOrdersLabel () {
-        var response : String = "Open Orders: \n"
-        var i = 1
-        let (oO, e) = OpenOrdersLoader.returnOpenOrders(currencyPair:"all", keys!)
-        for x in oO {
-            let c0 = x.currencyPair!.components(separatedBy: "_")[0]
-            let c1 = x.currencyPair!.components(separatedBy: "_")[1]
-            response = response + String.localizedStringWithFormat("%i. %@ %.3f %@ at %.2f %@/%@\n", i, x.type!.uppercased(), x.amount!, c1, x.rate!, c0, c1)
-            i=i+1
+    func updateOpenOrdersTableView () {
+        var e = ""
+        (openOrders, e) = OpenOrdersLoader.returnOpenOrders(currencyPair:"all", keys!)
+        var response : [String] = []
+        var buttons : [String] = []
+        if openOrders.count==0 {response = ["No open orders."]}
+        else {
+            for x in openOrders {
+                let c0 = x.currencyPair!.components(separatedBy: "_")[0]
+                let c1 = x.currencyPair!.components(separatedBy: "_")[1]
+                response.append(String.localizedStringWithFormat("%@ %.3f %@ at %.2f %@/%@\n", x.type!.uppercased(), x.amount!, c1, x.rate!, c0, c1))
+                buttons.append(c1)
+            }
         }
-        var responseTrunc = ""
-        if i == 1 {responseTrunc = "No open orders."} else {
-            //remove the last new line special character
-            let endIndex = response.index(response.endIndex, offsetBy: -1)
-            responseTrunc = response.substring(to: endIndex)
-        }
-        
-        openOrdersLabel.preferredMaxLayoutWidth = 400
-        openOrdersLabel.maximumNumberOfLines = 5
-        
         if !e.isEmpty {
-            openOrdersLabel.stringValue = e
+            openOrdersString = [e];
+//            cancelButtons = []
         }
         else {
-            openOrdersLabel.stringValue = responseTrunc
+            openOrdersString = response
+//            cancelButtons = buttons
         }
+        openOrdersTableView.reloadData()
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
