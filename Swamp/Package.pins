@@ -1,0 +1,30 @@
+{
+  "autoPin": true,
+  "pins": [
+    {
+      "package": "CryptoSwift",
+      "reason": null,
+      "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift",
+      "version": "0.6.9"
+    },
+    {
+      "package": "Starscream",
+      "reason": null,
+      "repositoryURL": "https://github.com/daltoniam/Starscream",
+      "version": "2.0.4"
+    },
+    {
+      "package": "Swamp",
+      "reason": null,
+      "repositoryURL": "https://github.com/RadarBee/swamp.git",
+      "version": "0.2.1"
+    },
+    {
+      "package": "SwiftyJSON",
+      "reason": null,
+      "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
+      "version": "3.1.4"
+    }
+  ],
+  "version": 1
+}

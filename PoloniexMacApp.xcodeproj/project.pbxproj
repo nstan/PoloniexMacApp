@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30663961F46F99300208EEC /* SettingsGeneralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30663951F46F99300208EEC /* SettingsGeneralVC.swift */; };
+		D30663981F46FDE100208EEC /* SettingsAdvancedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30663971F46FDE100208EEC /* SettingsAdvancedVC.swift */; };
 		D321AA321F43E18D005C5E88 /* PoloniexPrivateAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA2E1F43E18D005C5E88 /* PoloniexPrivateAPIs.swift */; };
 		D321AA331F43E18D005C5E88 /* PoloniexPublicAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA2F1F43E18D005C5E88 /* PoloniexPublicAPIs.swift */; };
 		D321AA341F43E18D005C5E88 /* PoloniexRequestPrivate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA301F43E18D005C5E88 /* PoloniexRequestPrivate.swift */; };
@@ -14,6 +16,10 @@
 		D321AA371F43E1B5005C5E88 /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA361F43E1B5005C5E88 /* DataStructures.swift */; };
 		D321AA3D1F43E34F005C5E88 /* RNCryptor.c in Sources */ = {isa = PBXBuildFile; fileRef = D321AA3B1F43E34F005C5E88 /* RNCryptor.c */; };
 		D321AA3F1F43ECD8005C5E88 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA3E1F43ECD8005C5E88 /* Crypto.swift */; };
+		D34DC8281F46DBFD00CA33CF /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DC8241F46DBFD00CA33CF /* CryptoSwift.framework */; };
+		D34DC8291F46DBFD00CA33CF /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DC8251F46DBFD00CA33CF /* Starscream.framework */; };
+		D34DC82A1F46DBFD00CA33CF /* Swamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DC8261F46DBFD00CA33CF /* Swamp.framework */; };
+		D34DC82B1F46DBFD00CA33CF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DC8271F46DBFD00CA33CF /* SwiftyJSON.framework */; };
 		D398E4C01F40F5C200EEF836 /* MyCustomSwiftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4BF1F40F5C200EEF836 /* MyCustomSwiftSegue.swift */; };
 		D398E4C21F40F75D00EEF836 /* MyCustomSwiftAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4C11F40F75D00EEF836 /* MyCustomSwiftAnimator.swift */; };
 		D398E4C41F413A7E00EEF836 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4C31F413A7E00EEF836 /* Constants.swift */; };
@@ -48,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D30663951F46F99300208EEC /* SettingsGeneralVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsGeneralVC.swift; sourceTree = "<group>"; };
+		D30663971F46FDE100208EEC /* SettingsAdvancedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsAdvancedVC.swift; sourceTree = "<group>"; };
 		D321AA2E1F43E18D005C5E88 /* PoloniexPrivateAPIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoloniexPrivateAPIs.swift; sourceTree = "<group>"; };
 		D321AA2F1F43E18D005C5E88 /* PoloniexPublicAPIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoloniexPublicAPIs.swift; sourceTree = "<group>"; };
 		D321AA301F43E18D005C5E88 /* PoloniexRequestPrivate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoloniexRequestPrivate.swift; sourceTree = "<group>"; };
@@ -57,6 +65,11 @@
 		D321AA3B1F43E34F005C5E88 /* RNCryptor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RNCryptor.c; sourceTree = "<group>"; };
 		D321AA3C1F43E34F005C5E88 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
 		D321AA3E1F43ECD8005C5E88 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		D34DC81F1F46D89F00CA33CF /* Package.pins */ = {isa = PBXFileReference; lastKnownFileType = text; name = Package.pins; path = Swamp/Package.pins; sourceTree = "<group>"; };
+		D34DC8241F46DBFD00CA33CF /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Swamp/build/Debug/CryptoSwift.framework; sourceTree = "<group>"; };
+		D34DC8251F46DBFD00CA33CF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Swamp/build/Debug/Starscream.framework; sourceTree = "<group>"; };
+		D34DC8261F46DBFD00CA33CF /* Swamp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swamp.framework; path = Swamp/build/Debug/Swamp.framework; sourceTree = "<group>"; };
+		D34DC8271F46DBFD00CA33CF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Swamp/build/Debug/SwiftyJSON.framework; sourceTree = "<group>"; };
 		D398E4BF1F40F5C200EEF836 /* MyCustomSwiftSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomSwiftSegue.swift; sourceTree = "<group>"; };
 		D398E4C11F40F75D00EEF836 /* MyCustomSwiftAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomSwiftAnimator.swift; sourceTree = "<group>"; };
 		D398E4C31F413A7E00EEF836 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -84,6 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34DC8281F46DBFD00CA33CF /* CryptoSwift.framework in Frameworks */,
+				D34DC8291F46DBFD00CA33CF /* Starscream.framework in Frameworks */,
+				D34DC82A1F46DBFD00CA33CF /* Swamp.framework in Frameworks */,
+				D34DC82B1F46DBFD00CA33CF /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +128,18 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		D34DC81E1F46D89E00CA33CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D34DC8241F46DBFD00CA33CF /* CryptoSwift.framework */,
+				D34DC8251F46DBFD00CA33CF /* Starscream.framework */,
+				D34DC8261F46DBFD00CA33CF /* Swamp.framework */,
+				D34DC8271F46DBFD00CA33CF /* SwiftyJSON.framework */,
+				D34DC81F1F46D89F00CA33CF /* Package.pins */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D398E4BE1F40F5A900EEF836 /* Custom Segue */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +161,7 @@
 				D3A017E01F3D995C001D2B5D /* PoloniexMacAppUITests */,
 				D3A017BF1F3D995C001D2B5D /* Products */,
 				D321AA3A1F43E34F005C5E88 /* PoloniexMacApp-Bridging-Header.h */,
+				D34DC81E1F46D89E00CA33CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +181,8 @@
 				D3A017C11F3D995C001D2B5D /* AppDelegate.swift */,
 				D3A017F41F3DA89A001D2B5D /* AuthenticationVC.swift */,
 				D3A017F61F3DC43E001D2B5D /* HomeScreenVC.swift */,
+				D30663951F46F99300208EEC /* SettingsGeneralVC.swift */,
+				D30663971F46FDE100208EEC /* SettingsAdvancedVC.swift */,
 				D3A017C81F3D995C001D2B5D /* Assets.xcassets */,
 				D3A017CA1F3D995C001D2B5D /* Main.storyboard */,
 				D3A017CD1F3D995C001D2B5D /* Info.plist */,
@@ -339,6 +371,7 @@
 				D3A017F71F3DC43E001D2B5D /* HomeScreenVC.swift in Sources */,
 				D321AA3F1F43ECD8005C5E88 /* Crypto.swift in Sources */,
 				D321AA341F43E18D005C5E88 /* PoloniexRequestPrivate.swift in Sources */,
+				D30663981F46FDE100208EEC /* SettingsAdvancedVC.swift in Sources */,
 				D3A017F11F3DA1D9001D2B5D /* KeyLoader.swift in Sources */,
 				D321AA371F43E1B5005C5E88 /* DataStructures.swift in Sources */,
 				D321AA331F43E18D005C5E88 /* PoloniexPublicAPIs.swift in Sources */,
@@ -350,6 +383,7 @@
 				D398E4C21F40F75D00EEF836 /* MyCustomSwiftAnimator.swift in Sources */,
 				D398E4C41F413A7E00EEF836 /* Constants.swift in Sources */,
 				D321AA3D1F43E34F005C5E88 /* RNCryptor.c in Sources */,
+				D30663961F46F99300208EEC /* SettingsGeneralVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +529,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6J9735Q573;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Swamp/build/Debug",
+				);
 				INFOPLIST_FILE = PoloniexMacApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolastan.PoloniexMacApp;
@@ -512,6 +550,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6J9735Q573;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Swamp/build/Debug",
+				);
 				INFOPLIST_FILE = PoloniexMacApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolastan.PoloniexMacApp;

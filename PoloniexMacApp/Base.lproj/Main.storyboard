@@ -755,6 +755,15 @@
                                     <outlet property="nextKeyView" destination="ddi-br-89E" id="tTK-U3-x3d"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXq-jB-FQy">
+                                <rect key="frame" x="197" y="222" width="87" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Your API keys" id="9dC-3Q-8d3">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
@@ -762,12 +771,11 @@
                         <outlet property="publicKeyTextField" destination="ddi-br-89E" id="3gf-yh-8XW"/>
                         <outlet property="saveKeysSwitch" destination="J9A-tb-Xye" id="izV-48-w0D"/>
                         <outlet property="secretKeyTextField" destination="YBK-N2-CIR" id="yCn-iw-zv9"/>
-                        <segue destination="Yrh-UM-kgg" kind="show" identifier="toHomeScreen" id="qbq-Tx-aTm"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-552" y="1306"/>
+            <point key="canvasLocation" x="-113" y="1917"/>
         </scene>
         <!--Home ScreenVC-->
         <scene sceneID="Y8Y-8N-DQu">
@@ -889,6 +897,26 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zk-us-bGw">
+                                <rect key="frame" x="833" y="567" width="91" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Settings" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bpf-DJ-EXn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="settingsButtonPressed:" target="Yrh-UM-kgg" id="4W1-pP-5SR"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytR-Xn-FsO">
+                                <rect key="frame" x="20" y="573" width="381" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" placeholderString="[live ticker data]" drawsBackground="YES" allowsEditingTextAttributes="YES" id="tmT-Jw-lhM">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <shadow key="shadow">
                             <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -897,7 +925,8 @@
                     <connections>
                         <outlet property="APIKeysButton" destination="Mhf-KZ-1gv" id="wXg-wG-Ft3"/>
                         <outlet property="openOrdersTableView" destination="kna-Ec-2Ea" id="6WM-qM-Eov"/>
-                        <segue destination="XfG-lQ-9wD" kind="custom" identifier="toSettings" customClass="MyCustomSwiftSegue" customModule="PoloniexMacApp" customModuleProvider="target" id="mes-cC-UE6"/>
+                        <outlet property="settingsButton" destination="0zk-us-bGw" id="hRQ-Dq-MXu"/>
+                        <outlet property="tickerLabel" destination="ytR-Xn-FsO" id="sCC-ka-V8F"/>
                     </connections>
                 </viewController>
                 <customObject id="sAd-1E-Tln" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -905,8 +934,124 @@
             </objects>
             <point key="canvasLocation" x="768" y="1290.5"/>
         </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="V1f-Mp-uw1">
+            <objects>
+                <tabViewController storyboardIdentifier="settingsViewController" selectedTabViewItemIndex="0" id="Q89-rL-j2p" sceneMemberID="viewController">
+                    <button key="view" verticalHuggingPriority="750" id="LqX-Dl-ywx">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iQT-KU-soC">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <tabViewItems>
+                        <tabViewItem identifier="" id="EF7-DO-QCS"/>
+                        <tabViewItem identifier="" id="gMU-QN-fCx"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="qzG-Vd-Jxr">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <tabViewItems/>
+                    </tabView>
+                    <connections>
+                        <segue destination="kdI-4v-Y6M" kind="relationship" relationship="tabItems" id="RWR-6L-01H"/>
+                        <segue destination="eSx-X2-1fh" kind="relationship" relationship="tabItems" id="rY5-ph-maa"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="ddI-GF-nY5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="1957"/>
+        </scene>
+        <!--General-->
+        <scene sceneID="aHr-T0-Lm9">
+            <objects>
+                <viewController title="General" id="kdI-4v-Y6M" customClass="SettingsGeneralVC" customModule="PoloniexMacApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="cEZ-Ey-QMa">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="250"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mg7-D7-er4">
+                                <rect key="frame" x="377" y="13" width="59" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Eek-Mc-yT5">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="OKButtonPressed:" target="kdI-4v-Y6M" id="Mfd-kD-7MB"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuQ-w7-ulf">
+                                <rect key="frame" x="18" y="214" width="130" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Select currency pair:" id="wIP-j9-E9M">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kDm-Dk-p5m">
+                                <rect key="frame" x="18" y="182" width="140" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="kd7-sK-BMA" id="GsP-Db-efS">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="UPZ-0v-5bg">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="kd7-sK-BMA"/>
+                                            <menuItem title="Item 2" id="aw9-x3-PHZ"/>
+                                            <menuItem title="Item 3" id="Nag-yM-ju6"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="currencyPairListSelected:" target="kdI-4v-Y6M" id="oR7-yx-y10"/>
+                                </connections>
+                            </popUpButton>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="currencyPairListSelector" destination="kDm-Dk-p5m" id="CdW-1P-blQ"/>
+                    </connections>
+                </viewController>
+                <customObject id="2Lu-d4-OgR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1309" y="1957"/>
+        </scene>
+        <!--Advanced-->
+        <scene sceneID="8YB-dR-y6Q">
+            <objects>
+                <viewController title="Advanced" id="eSx-X2-1fh" customClass="SettingsAdvancedVC" customModule="PoloniexMacApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Y76-ma-hja">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="250"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QIj-Yn-hFj">
+                                <rect key="frame" x="377" y="13" width="59" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="i56-Q3-p7z">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="OKButtonPressed:" target="eSx-X2-1fh" id="Iht-7j-tMG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="iTj-WS-ksb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1309" y="2410"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="paK-Cj-jV2"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -22,12 +22,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         
+        //Initializing user settings values
+        let  cp = (defaults.object(forKey: "Currency Pair") as! String?) ?? ""
+        if ((cp).isEmpty) {defaults.set("USDT_ETH", forKey: "Currency Pair")}
+        
+        
         // Override point for customization after application launch.
         
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
+//        HomeScreenVC.timer.invalidate()
+        print("App will terminate")
+
+        print("disconnecting Swamp session")
+//        HomeScreenVC.swampSession.disconnect("Application Shut Down")
     }
 
     // MARK: - Core Data stack

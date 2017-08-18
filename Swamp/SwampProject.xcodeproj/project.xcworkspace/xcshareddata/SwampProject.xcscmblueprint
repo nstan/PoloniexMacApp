@@ -1,0 +1,51 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EC0DB17B8D91EB12D6EE397F8921D126F1BBF8B9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EE1F3D6B7D8D2456486E2F7EF9C296764B7EA262" : 9223372036854775807,
+    "C86D95FCAEB1FEA0694B5D4AC7241D7E5F42F31D" : 9223372036854775807,
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : 9223372036854775807,
+    "EC0DB17B8D91EB12D6EE397F8921D126F1BBF8B9" : 9223372036854775807,
+    "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "91D3CD3E-D10A-40E3-888F-A8D35085DF74",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EE1F3D6B7D8D2456486E2F7EF9C296764B7EA262" : "PoloniexMacApp\/Swamp\/.build\/checkouts\/swamp.git--4372324636367203409\/",
+    "C86D95FCAEB1FEA0694B5D4AC7241D7E5F42F31D" : "PoloniexMacApp\/Swamp\/.build\/checkouts\/Starscream-6423249093605004847\/",
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : "PoloniexMacApp\/Swamp\/.build\/checkouts\/CryptoSwift--5560562967812595289\/",
+    "EC0DB17B8D91EB12D6EE397F8921D126F1BBF8B9" : "PoloniexMacApp\/",
+    "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : "PoloniexMacApp\/Swamp\/.build\/checkouts\/SwiftyJSON.git-3043514560129222422\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwampProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Swamp\/SwampProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/nstan\/Documents\/Code\/My%20Poloniex%20App\/PoloniexMacApp\/Swamp\/.build\/repositories\/CryptoSwift--5560562967812595289",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/nstan\/Documents\/Code\/My%20Poloniex%20App\/PoloniexMacApp\/Swamp\/.build\/repositories\/SwiftyJSON.git-3043514560129222422",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/nstan\/Documents\/Code\/My%20Poloniex%20App\/PoloniexMacApp\/Swamp\/.build\/repositories\/Starscream-6423249093605004847",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C86D95FCAEB1FEA0694B5D4AC7241D7E5F42F31D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/bitbucket.org\/nstan\/poloniexmac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EC0DB17B8D91EB12D6EE397F8921D126F1BBF8B9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/nstan\/Documents\/Code\/My%20Poloniex%20App\/PoloniexMacApp\/Swamp\/.build\/repositories\/swamp.git--4372324636367203409",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EE1F3D6B7D8D2456486E2F7EF9C296764B7EA262"
+    }
+  ]
+}
