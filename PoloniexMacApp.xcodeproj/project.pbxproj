@@ -16,10 +16,10 @@
 		D321AA371F43E1B5005C5E88 /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA361F43E1B5005C5E88 /* DataStructures.swift */; };
 		D321AA3D1F43E34F005C5E88 /* RNCryptor.c in Sources */ = {isa = PBXBuildFile; fileRef = D321AA3B1F43E34F005C5E88 /* RNCryptor.c */; };
 		D321AA3F1F43ECD8005C5E88 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D321AA3E1F43ECD8005C5E88 /* Crypto.swift */; };
-		D34DC8281F46DBFD00CA33CF /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DC8241F46DBFD00CA33CF /* CryptoSwift.framework */; };
 		D34DC8291F46DBFD00CA33CF /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DC8251F46DBFD00CA33CF /* Starscream.framework */; };
 		D34DC82A1F46DBFD00CA33CF /* Swamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DC8261F46DBFD00CA33CF /* Swamp.framework */; };
 		D34DC82B1F46DBFD00CA33CF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34DC8271F46DBFD00CA33CF /* SwiftyJSON.framework */; };
+		D36A1D741FBEE05D000C1B69 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36A1D751FBEE05D000C1B69 /* CryptoSwift.framework */; };
 		D398E4C01F40F5C200EEF836 /* MyCustomSwiftSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4BF1F40F5C200EEF836 /* MyCustomSwiftSegue.swift */; };
 		D398E4C21F40F75D00EEF836 /* MyCustomSwiftAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4C11F40F75D00EEF836 /* MyCustomSwiftAnimator.swift */; };
 		D398E4C41F413A7E00EEF836 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398E4C31F413A7E00EEF836 /* Constants.swift */; };
@@ -66,10 +66,10 @@
 		D321AA3C1F43E34F005C5E88 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
 		D321AA3E1F43ECD8005C5E88 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		D34DC81F1F46D89F00CA33CF /* Package.pins */ = {isa = PBXFileReference; lastKnownFileType = text; name = Package.pins; path = Swamp/Package.pins; sourceTree = "<group>"; };
-		D34DC8241F46DBFD00CA33CF /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Swamp/build/Debug/CryptoSwift.framework; sourceTree = "<group>"; };
 		D34DC8251F46DBFD00CA33CF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Swamp/build/Debug/Starscream.framework; sourceTree = "<group>"; };
 		D34DC8261F46DBFD00CA33CF /* Swamp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swamp.framework; path = Swamp/build/Debug/Swamp.framework; sourceTree = "<group>"; };
 		D34DC8271F46DBFD00CA33CF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Swamp/build/Debug/SwiftyJSON.framework; sourceTree = "<group>"; };
+		D36A1D751FBEE05D000C1B69 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D398E4BF1F40F5C200EEF836 /* MyCustomSwiftSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomSwiftSegue.swift; sourceTree = "<group>"; };
 		D398E4C11F40F75D00EEF836 /* MyCustomSwiftAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomSwiftAnimator.swift; sourceTree = "<group>"; };
 		D398E4C31F413A7E00EEF836 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34DC8281F46DBFD00CA33CF /* CryptoSwift.framework in Frameworks */,
+				D36A1D741FBEE05D000C1B69 /* CryptoSwift.framework in Frameworks */,
 				D34DC8291F46DBFD00CA33CF /* Starscream.framework in Frameworks */,
 				D34DC82A1F46DBFD00CA33CF /* Swamp.framework in Frameworks */,
 				D34DC82B1F46DBFD00CA33CF /* SwiftyJSON.framework in Frameworks */,
@@ -131,7 +131,7 @@
 		D34DC81E1F46D89E00CA33CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D34DC8241F46DBFD00CA33CF /* CryptoSwift.framework */,
+				D36A1D751FBEE05D000C1B69 /* CryptoSwift.framework */,
 				D34DC8251F46DBFD00CA33CF /* Starscream.framework */,
 				D34DC8261F46DBFD00CA33CF /* Swamp.framework */,
 				D34DC8271F46DBFD00CA33CF /* SwiftyJSON.framework */,

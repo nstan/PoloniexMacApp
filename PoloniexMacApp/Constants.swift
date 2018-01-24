@@ -10,8 +10,8 @@
 let keychainKeyPublicKey = "publicKey"
 let keychainKeySecretKey = "secretKey"
 
-let updateSynchronousDataAfterSeconds:Int = 60
-let updateSynchronousDataAfterSecondsTolerance:Int = 30
+let updateSynchronousDataAfterSeconds:Int = 10
+let updateSynchronousDataAfterSecondsTolerance:Int = 5
 let minTimeBetweenRequest:Int = 1
 let tickerUpdatedNotificationKey = "nikolastan.com.tickerUpdated"
 let orderBookAndTradesUpdatedNotificationKey = "nikolastan.com.orderBookUpdated"
